@@ -1,0 +1,3 @@
+# Optional: can be installed in a separate environment.
+onnx-asr[cpu,hub]>=0.10.2,<1
+numpy>=1.26,<3

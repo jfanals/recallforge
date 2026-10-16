@@ -1,0 +1,20 @@
+# Learner material and generated artifacts stay private by default
+workspace/
+output/
+build/
+*.wav
+*.mp3
+*.m4a
+# Environments, model assets, secrets, local session state
+.venv/
+.venv-*/
+__pycache__/
+*.py[cod]
+.env
+.env.*
+!.env.example
+*.pt
+*.onnx
+*.safetensors
+.pi/
+.DS_Store

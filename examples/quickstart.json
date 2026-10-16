@@ -1,0 +1,24 @@
+{
+  "title": "Ask for a coffee — PT-BR to American English",
+  "version": 1,
+  "source": "Original RecallForge example; no commercial course material",
+  "narrator_language": "pt-BR",
+  "target_language": "en-US",
+  "goals": ["Politely request a coffee", "Retrieve the request before hearing the model"],
+  "segments": [
+    {"id":"s001","chapter":"01 · Listen and build","kind":"instruction","language":"pt-BR","voice":"pf_dora","text":"Ouça primeiro. Depois, fale durante a pausa, antes da resposta. Vamos pedir um café com educação.","gap_after_seconds":0.6},
+    {"id":"s002","chapter":"01 · Listen and build","kind":"dialogue","language":"en-US","voice":"af_bella","text":"Can I have a coffee, please?","gap_after_seconds":0.8},
+    {"id":"s003","chapter":"01 · Listen and build","kind":"dialogue","language":"en-US","voice":"am_adam","text":"Of course. Here you go.","gap_after_seconds":0.8},
+    {"id":"s004","chapter":"01 · Listen and build","kind":"instruction","language":"pt-BR","voice":"pf_dora","text":"Agora repita depois do exemplo. Um café, por favor.","gap_after_seconds":0.6},
+    {"id":"s005","chapter":"01 · Listen and build","kind":"repeat_model","language":"en-US","voice":"af_bella","text":"A coffee, please.","gap_after_seconds":4},
+    {"id":"s006","chapter":"01 · Listen and build","kind":"repeat_model","language":"en-US","voice":"af_bella","text":"Can I have a coffee, please?","gap_after_seconds":6},
+    {"id":"s007","chapter":"02 · Retrieve and transfer","kind":"recall_prompt","language":"pt-BR","voice":"pf_dora","text":"Peça um café com educação.","gap_after_seconds":6,"expected_answer":"Can I have a coffee, please?","acceptable_variants":["Can I have a coffee, please?","Could I have a coffee, please?"]},
+    {"id":"s008","chapter":"02 · Retrieve and transfer","kind":"confirmation","language":"en-US","voice":"af_bella","text":"Can I have a coffee, please?","gap_after_seconds":0.8},
+    {"id":"s009","chapter":"02 · Retrieve and transfer","kind":"instruction","language":"pt-BR","voice":"pf_dora","text":"Troque café por chá. Ouça e repita.","gap_after_seconds":0.6},
+    {"id":"s010","chapter":"02 · Retrieve and transfer","kind":"repeat_model","language":"en-US","voice":"am_adam","text":"Can I have a tea, please?","gap_after_seconds":6},
+    {"id":"s011","chapter":"03 · Check and personalize","kind":"assessment_prompt","language":"pt-BR","voice":"pf_dora","text":"Sem ler, peça um café com educação.","gap_after_seconds":6,"expected_answer":"Can I have a coffee, please?"},
+    {"id":"s012","chapter":"03 · Check and personalize","kind":"confirmation","language":"en-US","voice":"af_bella","text":"Can I have a coffee, please?","gap_after_seconds":0.8},
+    {"id":"s013","chapter":"03 · Check and personalize","kind":"free_response_prompt","language":"pt-BR","voice":"pf_dora","text":"Imagine que você está num café. Peça a bebida que prefere. Você terá quinze segundos. Não há uma única resposta certa.","gap_after_seconds":15},
+    {"id":"s014","chapter":"03 · Check and personalize","kind":"instruction","language":"pt-BR","voice":"pf_dora","text":"Amanhã, tente lembrar o pedido antes de ouvir novamente. Este exemplo curto demonstra o formato, não um curso completo.","gap_after_seconds":0.6}
+  ]
+}

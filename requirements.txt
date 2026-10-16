@@ -1,0 +1,6 @@
+# Reference synthesis stack. See docs/setup.md for system binaries/platform caveats.
+kokoro==0.9.4
+misaki[en]==0.9.4
+torch>=2.2,<3
+numpy>=1.26,<3
+soundfile>=0.12,<1
