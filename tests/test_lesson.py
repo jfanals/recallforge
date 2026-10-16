@@ -99,7 +99,7 @@ class LessonTests(unittest.TestCase):
         studio = load(ROOT / 'examples/studio-pt-en.json')
         self.assertEqual(len(studio['segments']), 156)
         self.assertEqual(sum(s['kind'] == 'assessment_prompt' for s in studio['segments']), 9)
-        self.assertEqual(sum(s['gap_after_seconds'] for s in studio['segments']), 497)
+        self.assertEqual(sum(round(s['gap_after_seconds'] * RATE) for s in studio['segments']), 497 * RATE)
 
 
 if __name__ == '__main__':
